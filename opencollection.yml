@@ -1,0 +1,29 @@
+opencollection: 1.0.0
+
+info:
+  name: lab-tretyakov
+config:
+  proxy:
+    inherit: true
+    config:
+      protocol: http
+      hostname: ""
+      port: ""
+      auth:
+        username: ""
+        password: ""
+      bypassProxy: ""
+
+request:
+  headers:
+    - name: Authorization
+      value: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE3NzMyMTk5MTEzNTYsInVzZXJuYW1lIjoiaWdvciIsImlhdCI6MTc3MzIxOTkxMSwiZXhwIjoxNzczMzA2MzExfQ.RngZJ_qCmTP9WHoVxCok4GXOFDprDe9AGkVzhwAhEGY
+  variables:
+    - name: url
+      value: https://kitek.ktkv.dev/marketplace/
+bundled: false
+extensions:
+  bruno:
+    ignore:
+      - node_modules
+      - .git
